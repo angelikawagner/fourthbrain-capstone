@@ -1,5 +1,0 @@
-# Temporary and binary files
-__pycache__/*
-*/.ipynb_checkpoints/*
-
-notebooks/experiments
