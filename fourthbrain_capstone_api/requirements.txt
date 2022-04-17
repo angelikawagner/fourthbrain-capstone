@@ -1,0 +1,8 @@
+
+fastapi==0.75.1
+gensim==4.1.2
+numpy==1.22.3
+pydantic==1.8.2
+spacy==3.2.4
+uvicorn==0.17.6
+en_core_web_md @ https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.2.0/en_core_web_md-3.2.0.tar.gz

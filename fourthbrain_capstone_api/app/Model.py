@@ -3,7 +3,7 @@ from gensim.corpora.dictionary import Dictionary
 from gensim.models import LdaModel
 from pydantic import BaseModel
 
-from helperfunctions import clean, decontracted, preprocess_text
+from app.helperfunctions import clean, decontracted, preprocess_text
 
 from spacy.lang.en.stop_words import STOP_WORDS as en_stop 
 en_stop.add("said") # add 'said to stop words because it appears a lot in the data
@@ -16,8 +16,8 @@ class InputDoc(BaseModel):
 class MyLdaModel(object):
 
     def __init__(self):
-        self.model_fname_ = 'models/LDAModel'
-        self.corpus_dict_fname_ = 'models/dict'
+        self.model_fname_ = 'app/api_model/LDAModel'
+        self.corpus_dict_fname_ = 'app/api_model/dict'
         # load spacy module here..
         try:
             self.model = LdaModel.load(self.model_fname_)
